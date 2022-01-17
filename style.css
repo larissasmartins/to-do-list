@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+:root {
+    --primary-color: rgba(1, 244, 212, 0.91);
+    --secondary-color: rgb(247, 247, 241);
+    --third-color: #499167;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+html {
+    font-size: 65%;
+}
+body {
+    background-color: var(--primary-color);
+    font: bold 2rem 'Poiret One', cursive;
+}
+main {
+    min-height: 100vh;
+    background: linear-gradient(to right top, #9bffd0,#9CC5A1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo {
+    display: flex;
+    width: 48vw;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.todo__title {
+    display: flex;
+    background-color: transparent;
+    border: rgba(255, 255, 255, 0.808);
+    width: 40%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 145px;
+    box-shadow: 2px 2px 6px var(--secondary-color);
+    font-size: 4rem;
+    color: rgba(24, 126, 112, 0.911);
+}
+.todo__list {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    gap: 5px;
+}
+.todo__item{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+}
+.todo__item > div {
+    width: 80%;
+}
+.todo__item:hover {
+    cursor: pointer;
+    transition: all .4s ease;
+    background-color: rgba(255, 255, 255, 0.911);
+    color: #499167;
+}
+
+
+.todo__item > input[type='text'] {
+    border: none;
+    width: 40%;
+    font: inherit;
+    
+}
+.todo__item > input[type='button'],
+.todo__item > input[type='checkbox'] {
+    width: 28px;
+    height: 28px;
+    font: inherit;
+    background-color: #55997154;
+    border: 2px solid #ffffffda;
+}
+.todo__item > input[type='checkbox']:checked  + div {
+    text-decoration:line-through;
+}
+.todo__new-item{
+    display: flex;
+    background-color: #499167;
+    width: 85%;
+    height: 62px;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 6px #499167;
+    margin: 10px;
+    font: inherit;
+}
+.todo__new-item > input{
+    background-color: #499167;
+    border: none;
+    width: 80%;
+    outline: none;
+    font: inherit;
+}
+.todo__new-item > input::placeholder {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 88%;
+    color: rgba(191, 255, 204, 0.856);
+}
+.glass {
+    background: rgba(255, 255, 255, 0.61);
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    border-radius: 3rem;
+    backdrop-filter: blur(25rem);
+}
