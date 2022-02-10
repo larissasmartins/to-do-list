@@ -1,7 +1,7 @@
 <h1 align="center">
   Larissa's To do List
 </h1>
-<h3 align="center">A simple todo list app that you can add, delete or mark the activity as completed.</h3 align="center">
+<h3 align="center">A simple todo list that you can add, delete or mark the activity as completed.</h3 align="center">
 <h4 align="center">Technologies used for the project:</h4align="center">
 <p align="center">HTML5, CSS3 and Javascript</p align="center">
 
